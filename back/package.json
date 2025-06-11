@@ -1,0 +1,20 @@
+{
+  "start": "pm2 server.mjs",
+  "dev": "node server.mjs",
+  "mon": "nodemon server.mjs",
+  "type": "module",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "googleapis": "^150.0.1",
+    "multer": "^2.0.0",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7",
+    "rtp-parser": "^1.0.0",
+    "websocket": "^1.0.35",
+    "wrtc": "^0.4.7",
+    "ws": "^8.18.2"
+  }
+}

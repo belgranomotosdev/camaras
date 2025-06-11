@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "camaras-462620",
+  "private_key_id": "a822f6e282900154be6e2f6e4989e948ed5d4f37",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDXkyxKCiuiz/ud\nX+UkoR6e5L+NoYKHinFBbj5rHZH3RqoBoes0nQydHVvMih4GVEXKZgGw5E+1P6cK\n1ZoLseb3XT8NoRbh1nagq+07t0CxKczoNAEsPVB/P1HxTQdRGrCM4bbVA/Z+LcSB\nO+Zi9+03y5OP0/11G4pFJil+xtkfkx42jpjFIF82QmUYZfxeg9OfpQhY6n5TCExJ\nFwIYl3y22oxfHaDSvR86k5/MPq7VFcJzVi4VNAxUmgKocJ5K7lF4Q5VfGbFG9IE0\niZMqCtddOfvoiajUXUg1PX5vaDTuu5Z2EEQOoxtrvqhxz3iyVTjtjlS/bd+vIb1D\nD43VT8rXAgMBAAECggEAYKqGjCbWXVotBmtHWa8EB5UkjjJz0SqT0ZbJV4f5eawO\ntM+yJDQeQV+2V9hBUW49o14tePBQC8LguTuCKadbHeYKzaZEF/3u0Op3ZTUtxaOs\nVh1nvzo5W+39ZRo44zX4IBxgu1FdGUSVnqvJCe0JyuC3KSISwA4a6RoNNmOdXgns\nK+EA7MxFYYKnlA8tvNYt2Fs/qNlX19qd7UlnTtlwRuBnriPRwDjZYX9oC+yMcbhB\nr/CJ8WluiJW/mVswc55SCQrrPVjG0PnovGYajd/FLBcwK+hwaFKYJ22tFR+axUUm\nhFphE7LKMiobHWdyCDeJx82I3j4W2vwwk2c0JrnGqQKBgQDs42tpe12nCg68Vwx8\nhJJ0NBAkQ2QjX0jmsh0CWHA1oysNZEFDJDYiIQGdcok/QGB2Pb3DjpAox3aEUyTV\nwIBJhqcA+MSDN8ENJrJkShFqjJqey1OrBnT9Uyv63O6IjWQOo3mKHBe/HjyeFnfi\n7JBV7OHTVdVBzrI9B78wdBbiPwKBgQDo944iN/4RMtOLJgAyzhwESs4REni2PmBx\nRJeMeSe1Lv05tmiGiW8nanJlWaWc9r3858WjDITnVhBmvO9TEnLBaRcfMVjH07kw\norCkD/UCEbssAiB59U7d77mEjutj3pH9I/cZTKZSlflEnfyNv4Sov3oBWezTr1+u\nTMyYMsVBaQKBgDwLmVpvbtm8bufGmN+nKwhRehX3Dxb4PB5d34SMrkSqS2tlkjVW\npHIaM7KZKbjitJDELam4JUpw5NW9zYRw+xOoEgTpCcbJByIyQN2y+J8tbLP7jgW3\n6UedIXTBM6VhUY90WIZtgIdtPqhDwbe/hwaAuO08wIWhwwQ9RnUdt/85AoGAA6II\np2P0JFSElADts90e9ror6Hw/QahLXLjTHC+vfNXUwRelHaP7BcRVMFtrh70ZTV5X\n6KkDUZA4BUIhAUyiWX3IDIZ6efNFSgrfck+FZJjeMFuAIia/KhrY68ZGyXHpGOd8\nrPpTBaqtDnLgQ12fNfp2bpr2ZH6xoUg1UJJKHTECgYBBHPP1aU1mrsgpi8rucgnw\nxh5KrMwx0M+LTST55nw8YF0GCFnGjLbL4MiTFPtOxg+5sORwXcqQjnj/zmyVn0Jr\nfmMYFvZd82WCIRIdOBWfgRZU/nvmIJU+JzYi+3BxWjK/G6+qH3UlOm3tlVTxtdAr\nhMi3PMza9hsjzPKN3sW/OA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "camgrabacion@camaras-462620.iam.gserviceaccount.com",
+  "client_id": "108759643673879625747",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/camgrabacion%40camaras-462620.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
