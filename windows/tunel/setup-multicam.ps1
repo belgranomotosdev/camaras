@@ -12,7 +12,8 @@
 # ------------------------------------------------------------
 #  A) Ajusta esta URL a tu servidor Node.js
 # ------------------------------------------------------------
-$serverRegisterUrl = "https://servercamcanchas.onrender.com/api/register"
+# $serverRegisterUrl = "https://servercamcanchas.onrender.com/api/register"
+$serverRegisterUrl = "http://31.97.64.187:3000/api/deploy/0l-lwH7Dvu1PbX2HJL7YP/api/register"
 
 # ------------------------------------------------------------
 #  B) 1) Iniciar MediaMTX (antes rtsp-simple-server) en segundo plano
