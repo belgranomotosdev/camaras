@@ -1,5 +1,5 @@
 {
-  "start": "pm2 server.mjs",
+  "start": "node server.mjs",
   "dev": "node server.mjs",
   "build": "node server.mjs",
   "mon": "nodemon server.mjs",
