@@ -1,4 +1,7 @@
 {
+  "name": "mi-servidor-node",
+  "version": "1.0.0",
+  "main": "server.mjs",
   "start": "node server.mjs",
   "dev": "node server.mjs",
   "build": "node server.mjs",
