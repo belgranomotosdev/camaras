@@ -21,12 +21,17 @@ function saveCamerasToDisk() {
 
 function loadCamerasFromDisk() {
   if (fs.existsSync(CAM_FILE)) {
-    const data = fs.readFileSync(CAM_FILE);
-    Object.assign(cameras, JSON.parse(data));
-    // Reanudar streams
-    Object.entries(cameras).forEach(([camId, publicUrl]) => {
-      startStream({ camId, rtspUrl: publicUrl });
-    });
+    try {
+      const data = fs.readFileSync(CAM_FILE);
+      if (data.length === 0) return; // Si el archivo está vacío, no hacer nada
+      Object.assign(cameras, JSON.parse(data));
+      // Reanudar streams
+      Object.entries(cameras).forEach(([camId, publicUrl]) => {
+        startStream({ camId, rtspUrl: publicUrl });
+      });
+    } catch (err) {
+      console.error('❌ Error leyendo cameras.json:', err);
+    }
   }
 }
 
