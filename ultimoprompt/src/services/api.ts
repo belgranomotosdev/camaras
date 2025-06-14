@@ -1,3 +1,4 @@
+//api.ts
 import axios from 'axios';
 import { Stream } from '../types';
 
