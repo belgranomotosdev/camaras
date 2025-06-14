@@ -1,14 +1,13 @@
 {
   "name": "server-completo-frp",
   "version": "1.0.0",
-  "main": "server.mjs",
-  "start": "node server-completo-frp.mjs",
-  "dev": "node server-completo-frp.mjs",
-  "build": "node server-completo-frp.mjs",
-  "mon": "nodemon server-completo-frp.mjs",
   "type": "module",
   "scripts": {
-    "start": "node server.mjs"
+    "start": "node server-completo-frp.mjs",
+    "main": "server.mjs",
+    "dev": "node server-completo-frp.mjs",
+    "build": "node server-completo-frp.mjs",
+    "mon": "nodemon server-completo-frp.mjs"
   },
   "dependencies": {
     "child_process": "^1.0.2",
