@@ -50,14 +50,24 @@ app.post('/api/register', (req, res) => {
 });
 
 app.get('/api/streams', (req, res) => {
-  const liveStreams = Object.entries(cameras).map(([id]) => ({
-    id,
-    url: `/streams/live/${id}/index.m3u8`,
-    title: `Stream ${id}`,
-    thumbnail: `https://picsum.photos/seed/${id}/640/360`,
-    isLive: true,
-    viewCount: Math.floor(Math.random() * 100) + 1
-  }));
+  const liveStreams = Object.entries(cameras).map(([id, publicUrl]) => {
+    // Si la URL es pública (rtsp://host:port/camId), la exponemos
+    // Si es una URL local, exponemos la ruta HLS
+    let url;
+    if (publicUrl.startsWith('rtsp://') && !publicUrl.includes('192.168.') && !publicUrl.includes('localhost')) {
+      url = publicUrl; // URL pública RTSP
+    } else {
+      url = `/streams/live/${id}/index.m3u8`;
+    }
+    return {
+      id,
+      url,
+      title: `Stream ${id}`,
+      thumbnail: `https://picsum.photos/seed/${id}/640/360`,
+      isLive: true,
+      viewCount: Math.floor(Math.random() * 100) + 1
+    };
+  });
   res.json(liveStreams);
 });
 
