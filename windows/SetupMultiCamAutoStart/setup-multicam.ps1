@@ -9,7 +9,7 @@
 # ===================================================================
 
 # A) URL de tu servidor para registrar cámaras
-$serverRegisterUrl = "http://31.97.64.187:3000/api/deploy/0l-lwH7Dvu1PbX2HJL7YP/api/register"
+$serverRegisterUrl = "https://camarasserver-camserver-rlwh8e-a02680-31-97-64-187.traefik.me/api/register"
 
 # B) Iniciar MediaMTX
 Write-Host "▶ Iniciando MediaMTX (RTSP Simple Server)..."
