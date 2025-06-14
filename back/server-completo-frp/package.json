@@ -2,9 +2,9 @@
   "name": "server-completo-frp",
   "version": "1.0.0",
   "type": "module",
+  "main": "server-completo-frp.mjs",
   "scripts": {
     "start": "node server-completo-frp.mjs",
-    "main": "server.mjs",
     "dev": "node server-completo-frp.mjs",
     "build": "node server-completo-frp.mjs",
     "mon": "nodemon server-completo-frp.mjs"
