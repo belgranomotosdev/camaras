@@ -51,13 +51,13 @@ app.post('/api/register', (req, res) => {
 
 app.get('/api/streams', (req, res) => {
   const liveStreams = Object.entries(cameras).map(([id, publicUrl]) => {
-    // Si la URL es pública (rtsp://host:port/camId), la exponemos
-    // Si es una URL local, exponemos la ruta HLS
+    // Si la URL es RTSP pública, genera la URL HLS para el frontend
     let url;
-    if (publicUrl.startsWith('rtsp://') && !publicUrl.includes('192.168.') && !publicUrl.includes('localhost')) {
-      url = publicUrl; // URL pública RTSP
-    } else {
+    if (publicUrl.startsWith('rtsp://')) {
+      // Siempre devuelve la ruta HLS para el frontend
       url = `/streams/live/${id}/index.m3u8`;
+    } else {
+      url = publicUrl;
     }
     return {
       id,
