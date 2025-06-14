@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node server.mjs"
+  },
   "name": "mi-servidor-node",
   "version": "1.0.0",
   "main": "server.mjs",
