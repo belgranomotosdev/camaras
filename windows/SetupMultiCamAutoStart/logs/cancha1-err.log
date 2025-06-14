@@ -1,585 +1,0 @@
-ffmpeg version 2025-05-29-git-75960ac270-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
-  built with gcc 15.1.0 (Rev4, Built by MSYS2 project)
-  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
-  libavutil      60.  3.100 / 60.  3.100
-  libavcodec     62.  3.101 / 62.  3.101
-  libavformat    62.  0.102 / 62.  0.102
-  libavdevice    62.  0.100 / 62.  0.100
-  libavfilter    11.  0.100 / 11.  0.100
-  libswscale      9.  0.100 /  9.  0.100
-  libswresample   6.  0.100 /  6.  0.100
-Input #0, rtsp, from 'rtsp://augustodelcampo97:Nodotecnologico1*@192.168.1.181:554/stream1':
-  Metadata:
-    title           : Session streamed by "TP-LINK RTSP Server"
-  Duration: N/A, start: 0.000000, bitrate: N/A
-  Stream #0:0: Video: h264 (High), yuv420p(progressive), 1920x1080, 15 fps, 30 tbr, 90k tbn, Start 0.050000
-  Stream #0:1: Audio: pcm_alaw, 8000 Hz, mono, s16, 64 kb/s
-Stream mapping:
-  Stream #0:0 -> #0:0 (copy)
-  Stream #0:1 -> #0:1 (copy)
-Output #0, rtsp, to 'rtsp://localhost:8554/cancha1':
-  Metadata:
-    title           : Session streamed by "TP-LINK RTSP Server"
-    encoder         : Lavf62.0.102
-  Stream #0:0: Video: h264 (High), yuv420p(progressive), 1920x1080, q=2-31, 15 fps, 30 tbr, 90k tbn
-  Stream #0:1: Audio: pcm_alaw, 8000 Hz, mono, s16, 64 kb/s
-Press [q] to stop, [?] for help
-[rtsp @ 00000200a7f7cc80] Timestamps are unset in a packet for stream 0. This is deprecated and will stop working in the future. Fix your code to set the timestamps properly
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 125630, current: 100065; changing to 125631. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 125631, current: 104655; changing to 125632. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 125632, current: 109155; changing to 125633. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 125633, current: 118155; changing to 125634. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 125634, current: 122745; changing to 125635. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 12557, current: 9663; changing to 12558. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 12558, current: 10687; changing to 12559. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 12559, current: 11711; changing to 12560. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 224942, current: 187875; changing to 224943. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 224943, current: 192375; changing to 224944. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 224944, current: 201375; changing to 224945. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 224945, current: 205965; changing to 224946. This may result in incorrect timestamps in the output file.
-frame=   37 fps=0.0 q=-1.0 size=N/A time=00:00:02.35 bitrate=N/A speed=4.58x elapsed=0:00:00.51    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 224946, current: 210465; changing to 224947. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 224947, current: 219465; changing to 224948. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 224948, current: 224055; changing to 224949. This may result in incorrect timestamps in the output file.
-frame=   44 fps= 43 q=-1.0 size=N/A time=00:00:03.18 bitrate=N/A speed=3.11x elapsed=0:00:01.02    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 308018, current: 277940; changing to 308019. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 308019, current: 282440; changing to 308020. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 308020, current: 291440; changing to 308021. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 28418, current: 25516; changing to 28419. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 308021, current: 296030; changing to 308022. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 28419, current: 26540; changing to 28420. This may result in incorrect timestamps in the output file.
-frame=   52 fps= 34 q=-1.0 size=N/A time=00:00:03.35 bitrate=N/A speed=2.18x elapsed=0:00:01.53    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 308022, current: 300530; changing to 308023. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 308023, current: 305030; changing to 308024. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 28420, current: 27564; changing to 28421. This may result in incorrect timestamps in the output file.
-frame=   60 fps= 29 q=-1.0 size=N/A time=00:00:03.82 bitrate=N/A speed=1.85x elapsed=0:00:02.06    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 402652, current: 369001; changing to 402653. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 402653, current: 373501; changing to 402654. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 402654, current: 382501; changing to 402655. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 402655, current: 387091; changing to 402656. This may result in incorrect timestamps in the output file.
-frame=   68 fps= 26 q=-1.0 size=N/A time=00:00:04.36 bitrate=N/A speed=1.69x elapsed=0:00:02.58    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 402656, current: 391591; changing to 402657. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 402657, current: 400591; changing to 402658. This may result in incorrect timestamps in the output file.
-frame=   76 fps= 25 q=-1.0 size=N/A time=00:00:05.30 bitrate=N/A speed=1.71x elapsed=0:00:03.09    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 44259, current: 41359; changing to 44260. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 44260, current: 42383; changing to 44261. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 493951, current: 460188; changing to 493952. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 493952, current: 469188; changing to 493953. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 493953, current: 473778; changing to 493954. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 44261, current: 43407; changing to 44262. This may result in incorrect timestamps in the output file.
-frame=   83 fps= 23 q=-1.0 size=N/A time=00:00:05.33 bitrate=N/A speed=1.48x elapsed=0:00:03.60    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 493954, current: 478278; changing to 493955. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 493955, current: 487278; changing to 493956. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 493956, current: 491868; changing to 493957. This may result in incorrect timestamps in the output file.
-frame=   92 fps= 22 q=-1.0 size=N/A time=00:00:06.27 bitrate=N/A speed=1.52x elapsed=0:00:04.14    frame=   98 fps= 21 q=-1.0 size=N/A time=00:00:06.98 bitrate=N/A speed= 1.5x elapsed=0:00:04.65    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 663240, current: 637520; changing to 663241. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 663241, current: 642110; changing to 663242. This may result in incorrect timestamps in the output file.
-frame=  107 fps= 21 q=-1.0 size=N/A time=00:00:07.20 bitrate=N/A speed=1.39x elapsed=0:00:05.17    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 663242, current: 646610; changing to 663243. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 60110, current: 57205; changing to 60111. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 663243, current: 655610; changing to 663244. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 663244, current: 660200; changing to 663245. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 60111, current: 58229; changing to 60112. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 60112, current: 59253; changing to 60113. This may result in incorrect timestamps in the output file.
-frame=  115 fps= 20 q=-1.0 size=N/A time=00:00:07.66 bitrate=N/A speed=1.34x elapsed=0:00:05.70    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 753341, current: 723120; changing to 753342. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 753342, current: 732210; changing to 753343. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 753343, current: 736710; changing to 753344. This may result in incorrect timestamps in the output file.
-frame=  122 fps= 20 q=-1.0 size=N/A time=00:00:08.25 bitrate=N/A speed=1.33x elapsed=0:00:06.21    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 753344, current: 741210; changing to 753345. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 753345, current: 750300; changing to 753346. This may result in incorrect timestamps in the output file.
-frame=  131 fps= 19 q=-1.0 size=N/A time=00:00:09.14 bitrate=N/A speed=1.36x elapsed=0:00:06.74    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 844541, current: 818758; changing to 844542. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 75960, current: 73056; changing to 75961. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 844542, current: 823348; changing to 844543. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 75961, current: 74080; changing to 75962. This may result in incorrect timestamps in the output file.
-frame=  138 fps= 19 q=-1.0 size=N/A time=00:00:09.21 bitrate=N/A speed=1.27x elapsed=0:00:07.27    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 844543, current: 827848; changing to 844544. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 844544, current: 836848; changing to 844545. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 844545, current: 841438; changing to 844546. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 75962, current: 75104; changing to 75963. This may result in incorrect timestamps in the output file.
-frame=  146 fps= 19 q=-1.0 size=N/A time=00:00:09.77 bitrate=N/A speed=1.25x elapsed=0:00:07.78    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 934593, current: 908931; changing to 934594. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 934594, current: 913521; changing to 934595. This may result in incorrect timestamps in the output file.
-frame=  153 fps= 18 q=-1.0 size=N/A time=00:00:10.21 bitrate=N/A speed=1.23x elapsed=0:00:08.28    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 934595, current: 918021; changing to 934596. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 934596, current: 927021; changing to 934597. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 934597, current: 931611; changing to 934598. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 84499, current: 81588; changing to 84500. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 84500, current: 82612; changing to 84501. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 84501, current: 83636; changing to 84502. This may result in incorrect timestamps in the output file.
-frame=  161 fps= 18 q=-1.0 size=N/A time=00:00:10.71 bitrate=N/A speed=1.21x elapsed=0:00:08.81    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1030170, current: 996596; changing to 1030171. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1030171, current: 1001096; changing to 1030172. This may result in incorrect timestamps in the output file.
-frame=  169 fps= 18 q=-1.0 size=N/A time=00:00:11.18 bitrate=N/A speed= 1.2x elapsed=0:00:09.33    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1030172, current: 1010096; changing to 1030173. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1030173, current: 1014686; changing to 1030174. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1030174, current: 1019186; changing to 1030175. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1030175, current: 1028186; changing to 1030176. This may result in incorrect timestamps in the output file.
-frame=  177 fps= 18 q=-1.0 size=N/A time=00:00:12.12 bitrate=N/A speed=1.23x elapsed=0:00:09.84    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1121403, current: 1087711; changing to 1121404. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1121404, current: 1092211; changing to 1121405. This may result in incorrect timestamps in the output file.
-frame=  185 fps= 18 q=-1.0 size=N/A time=00:00:12.20 bitrate=N/A speed=1.18x elapsed=0:00:10.36    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 100338, current: 97427; changing to 100339. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1121405, current: 1101301; changing to 1121406. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1121406, current: 1105801; changing to 1121407. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 100339, current: 98451; changing to 100340. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1121407, current: 1110301; changing to 1121408. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1121408, current: 1119301; changing to 1121409. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 100340, current: 99475; changing to 100341. This may result in incorrect timestamps in the output file.
-frame=  192 fps= 18 q=-1.0 size=N/A time=00:00:12.81 bitrate=N/A speed=1.18x elapsed=0:00:10.89    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1207952, current: 1178009; changing to 1207953. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1207953, current: 1182509; changing to 1207954. This may result in incorrect timestamps in the output file.
-frame=  200 fps= 18 q=-1.0 size=N/A time=00:00:13.20 bitrate=N/A speed=1.16x elapsed=0:00:11.40    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1207954, current: 1191509; changing to 1207955. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1207955, current: 1196099; changing to 1207956. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1207956, current: 1200599; changing to 1207957. This may result in incorrect timestamps in the output file.
-frame=  208 fps= 17 q=-1.0 size=N/A time=00:00:14.13 bitrate=N/A speed=1.19x elapsed=0:00:11.91    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1298164, current: 1268116; changing to 1298165. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 116187, current: 113281; changing to 116188. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1298165, current: 1272616; changing to 1298166. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 116188, current: 114305; changing to 116189. This may result in incorrect timestamps in the output file.
-frame=  215 fps= 17 q=-1.0 size=N/A time=00:00:14.20 bitrate=N/A speed=1.14x elapsed=0:00:12.43    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1298166, current: 1281616; changing to 1298167. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1298167, current: 1286206; changing to 1298168. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1298168, current: 1290706; changing to 1298169. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 116189, current: 115329; changing to 116190. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1298169, current: 1295206; changing to 1298170. This may result in incorrect timestamps in the output file.
-frame=  223 fps= 17 q=-1.0 size=N/A time=00:00:14.80 bitrate=N/A speed=1.14x elapsed=0:00:12.94    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1388222, current: 1358139; changing to 1388223. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1388223, current: 1362639; changing to 1388224. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1388224, current: 1371639; changing to 1388225. This may result in incorrect timestamps in the output file.
-frame=  231 fps= 17 q=-1.0 size=N/A time=00:00:15.30 bitrate=N/A speed=1.14x elapsed=0:00:13.46    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1388225, current: 1376229; changing to 1388226. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1388226, current: 1380729; changing to 1388227. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1388227, current: 1385229; changing to 1388228. This may result in incorrect timestamps in the output file.
-frame=  239 fps= 17 q=-1.0 size=N/A time=00:00:16.19 bitrate=N/A speed=1.16x elapsed=0:00:13.98    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 132054, current: 129130; changing to 132055. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 132055, current: 130154; changing to 132056. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1482873, current: 1449169; changing to 1482874. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1482874, current: 1453669; changing to 1482875. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 132056, current: 131178; changing to 132057. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1482875, current: 1462759; changing to 1482876. This may result in incorrect timestamps in the output file.
-frame=  247 fps= 17 q=-1.0 size=N/A time=00:00:16.31 bitrate=N/A speed=1.12x elapsed=0:00:14.50    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1482876, current: 1467259; changing to 1482877. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1482877, current: 1471759; changing to 1482878. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1482878, current: 1480759; changing to 1482879. This may result in incorrect timestamps in the output file.
-frame=  254 fps= 17 q=-1.0 size=N/A time=00:00:17.15 bitrate=N/A speed=1.14x elapsed=0:00:15.02    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1569411, current: 1539439; changing to 1569412. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1569412, current: 1543939; changing to 1569413. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1569413, current: 1552939; changing to 1569414. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 140580, current: 137657; changing to 140581. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1569414, current: 1557529; changing to 1569415. This may result in incorrect timestamps in the output file.
-frame=  263 fps= 17 q=-1.0 size=N/A time=00:00:17.33 bitrate=N/A speed=1.12x elapsed=0:00:15.54    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 140581, current: 138673; changing to 140582. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1569415, current: 1562029; changing to 1569416. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 140582, current: 139697; changing to 140583. This may result in incorrect timestamps in the output file.
-frame=  270 fps= 17 q=-1.0 size=N/A time=00:00:17.84 bitrate=N/A speed=1.11x elapsed=0:00:16.05    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1664185, current: 1630490; changing to 1664186. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1664186, current: 1634990; changing to 1664187. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1664187, current: 1644080; changing to 1664188. This may result in incorrect timestamps in the output file.
-frame=  278 fps= 17 q=-1.0 size=N/A time=00:00:18.33 bitrate=N/A speed=1.11x elapsed=0:00:16.58    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1664188, current: 1648580; changing to 1664189. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1664189, current: 1653080; changing to 1664190. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1664190, current: 1662170; changing to 1664191. This may result in incorrect timestamps in the output file.
-frame=  285 fps= 17 q=-1.0 size=N/A time=00:00:19.16 bitrate=N/A speed=1.12x elapsed=0:00:17.08    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1750799, current: 1720532; changing to 1750800. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 156409, current: 153503; changing to 156410. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1750800, current: 1725032; changing to 1750801. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 156410, current: 154527; changing to 156411. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1750801, current: 1734122; changing to 1750802. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1750802, current: 1738622; changing to 1750803. This may result in incorrect timestamps in the output file.
-frame=  294 fps= 17 q=-1.0 size=N/A time=00:00:19.38 bitrate=N/A speed= 1.1x elapsed=0:00:17.61    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 156411, current: 155551; changing to 156412. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1750803, current: 1743122; changing to 1750804. This may result in incorrect timestamps in the output file.
-frame=  301 fps= 17 q=-1.0 size=N/A time=00:00:20.21 bitrate=N/A speed=1.11x elapsed=0:00:18.14    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1840872, current: 1810663; changing to 1840873. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1840873, current: 1815163; changing to 1840874. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1840874, current: 1824253; changing to 1840875. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1840875, current: 1828753; changing to 1840876. This may result in incorrect timestamps in the output file.
-frame=  309 fps= 17 q=-1.0 size=N/A time=00:00:20.38 bitrate=N/A speed=1.09x elapsed=0:00:18.65    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1840876, current: 1833253; changing to 1840877. This may result in incorrect timestamps in the output file.
-frame=  317 fps= 17 q=-1.0 size=N/A time=00:00:21.31 bitrate=N/A speed=1.11x elapsed=0:00:19.17    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 172267, current: 169353; changing to 172268. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1930874, current: 1900895; changing to 1930875. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 172268, current: 170377; changing to 172269. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1930875, current: 1905395; changing to 1930876. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1930876, current: 1914395; changing to 1930877. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 172269, current: 171401; changing to 172270. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1930877, current: 1918985; changing to 1930878. This may result in incorrect timestamps in the output file.
-frame=  324 fps= 16 q=-1.0 size=N/A time=00:00:21.38 bitrate=N/A speed=1.09x elapsed=0:00:19.68    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 1930878, current: 1923485; changing to 1930879. This may result in incorrect timestamps in the output file.
-frame=  331 fps= 16 q=-1.0 size=N/A time=00:00:22.14 bitrate=N/A speed= 1.1x elapsed=0:00:20.21    frame=  340 fps= 16 q=-1.0 size=N/A time=00:00:23.12 bitrate=N/A speed=1.12x elapsed=0:00:20.71    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2107319, current: 2073619; changing to 2107320. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2107320, current: 2078119; changing to 2107321. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2107321, current: 2087209; changing to 2107322. This may result in incorrect timestamps in the output file.
-frame=  348 fps= 16 q=-1.0 size=N/A time=00:00:23.25 bitrate=N/A speed=1.09x elapsed=0:00:21.24    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 188110, current: 185205; changing to 188111. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2107322, current: 2091709; changing to 2107323. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 188111, current: 186229; changing to 188112. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2107323, current: 2096209; changing to 2107324. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2107324, current: 2105299; changing to 2107325. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 188112, current: 187253; changing to 188113. This may result in incorrect timestamps in the output file.
-frame=  355 fps= 16 q=-1.0 size=N/A time=00:00:23.79 bitrate=N/A speed=1.09x elapsed=0:00:21.77    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2193941, current: 2163683; changing to 2193942. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2193942, current: 2168183; changing to 2193943. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2193943, current: 2177273; changing to 2193944. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2193944, current: 2181773; changing to 2193945. This may result in incorrect timestamps in the output file.
-frame=  364 fps= 16 q=-1.0 size=N/A time=00:00:24.30 bitrate=N/A speed=1.09x elapsed=0:00:22.29    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2193945, current: 2186273; changing to 2193946. This may result in incorrect timestamps in the output file.
-frame=  371 fps= 16 q=-1.0 size=N/A time=00:00:25.14 bitrate=N/A speed= 1.1x elapsed=0:00:22.82    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2288643, current: 2254815; changing to 2288644. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 203974, current: 201059; changing to 203975. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2288644, current: 2263815; changing to 2288645. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 203975, current: 202083; changing to 203976. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2288645, current: 2268405; changing to 2288646. This may result in incorrect timestamps in the output file.
-frame=  379 fps= 16 q=-1.0 size=N/A time=00:00:25.27 bitrate=N/A speed=1.08x elapsed=0:00:23.33    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2288646, current: 2272905; changing to 2288647. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2288647, current: 2281905; changing to 2288648. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 203976, current: 203107; changing to 203977. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2288648, current: 2286495; changing to 2288649. This may result in incorrect timestamps in the output file.
-frame=  387 fps= 16 q=-1.0 size=N/A time=00:00:25.77 bitrate=N/A speed=1.08x elapsed=0:00:23.85    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2380816, current: 2351622; changing to 2380817. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2380817, current: 2356122; changing to 2380818. This may result in incorrect timestamps in the output file.
-frame=  395 fps= 16 q=-1.0 size=N/A time=00:00:26.24 bitrate=N/A speed=1.08x elapsed=0:00:24.36    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2380818, current: 2360622; changing to 2380819. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 212481, current: 209585; changing to 212482. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2380819, current: 2369712; changing to 2380820. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2380820, current: 2374212; changing to 2380821. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 212482, current: 210609; changing to 212483. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2380821, current: 2378712; changing to 2380822. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 212483, current: 211633; changing to 212484. This may result in incorrect timestamps in the output file.
-frame=  403 fps= 16 q=-1.0 size=N/A time=00:00:26.71 bitrate=N/A speed=1.07x elapsed=0:00:24.89    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2467372, current: 2441818; changing to 2467373. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2467373, current: 2446318; changing to 2467374. This may result in incorrect timestamps in the output file.
-frame=  410 fps= 16 q=-1.0 size=N/A time=00:00:27.24 bitrate=N/A speed=1.07x elapsed=0:00:25.40    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2467374, current: 2450818; changing to 2467375. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2467375, current: 2459908; changing to 2467376. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2467376, current: 2464408; changing to 2467377. This may result in incorrect timestamps in the output file.
-frame=  418 fps= 16 q=-1.0 size=N/A time=00:00:28.14 bitrate=N/A speed=1.09x elapsed=0:00:25.92    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2563030, current: 2529480; changing to 2563031. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 228338, current: 225428; changing to 228339. This may result in incorrect timestamps in the output file.
-frame=  425 fps= 16 q=-1.0 size=N/A time=00:00:28.17 bitrate=N/A speed=1.07x elapsed=0:00:26.43    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2563031, current: 2533980; changing to 2563032. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 228339, current: 226452; changing to 228340. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2563032, current: 2543070; changing to 2563033. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2563033, current: 2547570; changing to 2563034. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 228340, current: 227476; changing to 228341. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2563034, current: 2552070; changing to 2563035. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2563035, current: 2561160; changing to 2563036. This may result in incorrect timestamps in the output file.
-frame=  434 fps= 16 q=-1.0 size=N/A time=00:00:28.81 bitrate=N/A speed=1.07x elapsed=0:00:26.94    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2649671, current: 2619593; changing to 2649672. This may result in incorrect timestamps in the output file.
-frame=  440 fps= 16 q=-1.0 size=N/A time=00:00:29.17 bitrate=N/A speed=1.06x elapsed=0:00:27.47    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2649672, current: 2624093; changing to 2649673. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2649673, current: 2633093; changing to 2649674. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2649674, current: 2637683; changing to 2649675. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2649675, current: 2642183; changing to 2649676. This may result in incorrect timestamps in the output file.
-frame=  449 fps= 16 q=-1.0 size=N/A time=00:00:30.15 bitrate=N/A speed=1.08x elapsed=0:00:27.99    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 244186, current: 241298; changing to 244187. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2739734, current: 2709617; changing to 2739735. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 244187, current: 242322; changing to 244188. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2739735, current: 2714117; changing to 2739736. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2739736, current: 2718617; changing to 2739737. This may result in incorrect timestamps in the output file.
-frame=  457 fps= 16 q=-1.0 size=N/A time=00:00:30.27 bitrate=N/A speed=1.06x elapsed=0:00:28.51    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 244188, current: 243346; changing to 244189. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2739737, current: 2727707; changing to 2739738. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2739738, current: 2732207; changing to 2739739. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2739739, current: 2736707; changing to 2739740. This may result in incorrect timestamps in the output file.
-frame=  465 fps= 16 q=-1.0 size=N/A time=00:00:31.20 bitrate=N/A speed=1.08x elapsed=0:00:29.02    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2834545, current: 2800839; changing to 2834546. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2834546, current: 2805339; changing to 2834547. This may result in incorrect timestamps in the output file.
-frame=  472 fps= 16 q=-1.0 size=N/A time=00:00:31.23 bitrate=N/A speed=1.06x elapsed=0:00:29.55    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2834547, current: 2814429; changing to 2834548. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2834548, current: 2818929; changing to 2834549. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2834549, current: 2823429; changing to 2834550. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 2834550, current: 2832519; changing to 2834551. This may result in incorrect timestamps in the output file.
-frame=  480 fps= 16 q=-1.0 size=N/A time=00:00:32.09 bitrate=N/A speed=1.07x elapsed=0:00:30.06    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 260038, current: 257139; changing to 260039. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 260039, current: 258163; changing to 260040. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 260040, current: 259187; changing to 260041. This may result in incorrect timestamps in the output file.
-frame=  487 fps= 16 q=-1.0 size=N/A time=00:00:32.54 bitrate=N/A speed=1.06x elapsed=0:00:30.58    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3002715, current: 2972611; changing to 3002716. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3002716, current: 2977111; changing to 3002717. This may result in incorrect timestamps in the output file.
-frame=  496 fps= 16 q=-1.0 size=N/A time=00:00:33.14 bitrate=N/A speed=1.07x elapsed=0:00:31.09    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3002717, current: 2981611; changing to 3002718. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3002718, current: 2990701; changing to 3002719. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3002719, current: 2995201; changing to 3002720. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3002720, current: 2999701; changing to 3002721. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 268567, current: 265652; changing to 268568. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 268568, current: 266676; changing to 268569. This may result in incorrect timestamps in the output file.
-frame=  503 fps= 16 q=-1.0 size=N/A time=00:00:33.46 bitrate=N/A speed=1.06x elapsed=0:00:31.61    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 268569, current: 267700; changing to 268570. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3092725, current: 3062778; changing to 3092726. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3092726, current: 3067278; changing to 3092727. This may result in incorrect timestamps in the output file.
-frame=  511 fps= 16 q=-1.0 size=N/A time=00:00:34.14 bitrate=N/A speed=1.06x elapsed=0:00:32.14    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3092727, current: 3071778; changing to 3092728. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3092728, current: 3080868; changing to 3092729. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3092729, current: 3085368; changing to 3092730. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3092730, current: 3089868; changing to 3092731. This may result in incorrect timestamps in the output file.
-frame=  519 fps= 16 q=-1.0 size=N/A time=00:00:34.63 bitrate=N/A speed=1.06x elapsed=0:00:32.65    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3187514, current: 3153812; changing to 3187515. This may result in incorrect timestamps in the output file.
-frame=  526 fps= 16 q=-1.0 size=N/A time=00:00:35.10 bitrate=N/A speed=1.06x elapsed=0:00:33.16    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3187515, current: 3158312; changing to 3187516. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3187516, current: 3167402; changing to 3187517. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3187517, current: 3171902; changing to 3187518. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3187518, current: 3176402; changing to 3187519. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3187519, current: 3185492; changing to 3187520. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 284410, current: 281503; changing to 284411. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 284411, current: 282527; changing to 284412. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 284412, current: 283551; changing to 284413. This may result in incorrect timestamps in the output file.
-frame=  535 fps= 16 q=-1.0 size=N/A time=00:00:35.57 bitrate=N/A speed=1.06x elapsed=0:00:33.68    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3274172, current: 3243900; changing to 3274173. This may result in incorrect timestamps in the output file.
-frame=  541 fps= 16 q=-1.0 size=N/A time=00:00:36.11 bitrate=N/A speed=1.06x elapsed=0:00:34.19    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3274173, current: 3248400; changing to 3274174. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3274174, current: 3257490; changing to 3274175. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3274175, current: 3261990; changing to 3274176. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3274176, current: 3266490; changing to 3274177. This may result in incorrect timestamps in the output file.
-frame=  549 fps= 16 q=-1.0 size=N/A time=00:00:36.74 bitrate=N/A speed=1.06x elapsed=0:00:34.71    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3368796, current: 3335102; changing to 3368797. This may result in incorrect timestamps in the output file.
-frame=  557 fps= 16 q=-1.0 size=N/A time=00:00:37.12 bitrate=N/A speed=1.05x elapsed=0:00:35.24    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3368797, current: 3339602; changing to 3368798. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3368798, current: 3348692; changing to 3368799. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3368799, current: 3353192; changing to 3368800. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 300269, current: 297353; changing to 300270. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 300270, current: 298377; changing to 300271. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3368800, current: 3357692; changing to 3368801. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3368801, current: 3366782; changing to 3368802. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 300271, current: 299401; changing to 300272. This may result in incorrect timestamps in the output file.
-frame=  566 fps= 16 q=-1.0 size=N/A time=00:00:37.68 bitrate=N/A speed=1.05x elapsed=0:00:35.75    frame=  572 fps= 16 q=-1.0 size=N/A time=00:00:38.43 bitrate=N/A speed=1.06x elapsed=0:00:36.26    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3457415, current: 3431793; changing to 3457416. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3457416, current: 3436293; changing to 3457417. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3457417, current: 3440793; changing to 3457418. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3457418, current: 3449883; changing to 3457419. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3457419, current: 3454383; changing to 3457420. This may result in incorrect timestamps in the output file.
-frame=  581 fps= 16 q=-1.0 size=N/A time=00:00:39.03 bitrate=N/A speed=1.06x elapsed=0:00:36.77    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 316108, current: 313207; changing to 316109. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3547588, current: 3522008; changing to 3547589. This may result in incorrect timestamps in the output file.
-frame=  589 fps= 16 q=-1.0 size=N/A time=00:00:39.20 bitrate=N/A speed=1.05x elapsed=0:00:37.28    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3547589, current: 3526508; changing to 3547590. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 316109, current: 314231; changing to 316110. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3547590, current: 3531008; changing to 3547591. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3547591, current: 3540098; changing to 3547592. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 316110, current: 315255; changing to 316111. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3547592, current: 3544598; changing to 3547593. This may result in incorrect timestamps in the output file.
-frame=  596 fps= 16 q=-1.0 size=N/A time=00:00:39.79 bitrate=N/A speed=1.05x elapsed=0:00:37.80    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3637652, current: 3612121; changing to 3637653. This may result in incorrect timestamps in the output file.
-frame=  604 fps= 16 q=-1.0 size=N/A time=00:00:40.20 bitrate=N/A speed=1.05x elapsed=0:00:38.32    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3637653, current: 3616621; changing to 3637654. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3637654, current: 3621121; changing to 3637655. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3637655, current: 3630211; changing to 3637656. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3637656, current: 3634711; changing to 3637657. This may result in incorrect timestamps in the output file.
-frame=  611 fps= 16 q=-1.0 size=N/A time=00:00:41.03 bitrate=N/A speed=1.06x elapsed=0:00:38.85    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 331976, current: 329062; changing to 331977. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 331977, current: 330086; changing to 331978. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3727774, current: 3702090; changing to 3727775. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3727775, current: 3706680; changing to 3727776. This may result in incorrect timestamps in the output file.
-frame=  620 fps= 16 q=-1.0 size=N/A time=00:00:41.25 bitrate=N/A speed=1.05x elapsed=0:00:39.37    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3727776, current: 3711180; changing to 3727777. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 331978, current: 331110; changing to 331979. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3727777, current: 3715680; changing to 3727778. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3727778, current: 3724770; changing to 3727779. This may result in incorrect timestamps in the output file.
-frame=  627 fps= 16 q=-1.0 size=N/A time=00:00:42.04 bitrate=N/A speed=1.05x elapsed=0:00:39.91    frame=  634 fps= 16 q=-1.0 size=N/A time=00:00:42.49 bitrate=N/A speed=1.05x elapsed=0:00:40.42    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3818858, current: 3793340; changing to 3818859. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3818859, current: 3797840; changing to 3818860. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 340487, current: 337585; changing to 340488. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3818860, current: 3802340; changing to 3818861. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 340488, current: 338609; changing to 340489. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3818861, current: 3811430; changing to 3818862. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3818862, current: 3815930; changing to 3818863. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 340489, current: 339633; changing to 340490. This may result in incorrect timestamps in the output file.
-frame=  642 fps= 16 q=-1.0 size=N/A time=00:00:42.71 bitrate=N/A speed=1.04x elapsed=0:00:40.94    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3909014, current: 3883447; changing to 3909015. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3909015, current: 3887947; changing to 3909016. This may result in incorrect timestamps in the output file.
-frame=  651 fps= 16 q=-1.0 size=N/A time=00:00:43.26 bitrate=N/A speed=1.04x elapsed=0:00:41.45    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3909016, current: 3892447; changing to 3909017. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3909017, current: 3901537; changing to 3909018. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3909018, current: 3906037; changing to 3909019. This may result in incorrect timestamps in the output file.
-frame=  658 fps= 16 q=-1.0 size=N/A time=00:00:44.09 bitrate=N/A speed=1.05x elapsed=0:00:41.97    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3999070, current: 3973479; changing to 3999071. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 356334, current: 353434; changing to 356335. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3999071, current: 3977979; changing to 3999072. This may result in incorrect timestamps in the output file.
-frame=  666 fps= 16 q=-1.0 size=N/A time=00:00:44.26 bitrate=N/A speed=1.04x elapsed=0:00:42.49    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 356335, current: 354458; changing to 356336. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3999072, current: 3982479; changing to 3999073. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3999073, current: 3991569; changing to 3999074. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 3999074, current: 3996069; changing to 3999075. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 356336, current: 355482; changing to 356337. This may result in incorrect timestamps in the output file.
-frame=  674 fps= 16 q=-1.0 size=N/A time=00:00:44.81 bitrate=N/A speed=1.04x elapsed=0:00:43.01    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4089173, current: 4063523; changing to 4089174. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4089174, current: 4068113; changing to 4089175. This may result in incorrect timestamps in the output file.
-frame=  681 fps= 16 q=-1.0 size=N/A time=00:00:45.26 bitrate=N/A speed=1.04x elapsed=0:00:43.52    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4089175, current: 4072613; changing to 4089176. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4089176, current: 4081613; changing to 4089177. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4089177, current: 4086203; changing to 4089178. This may result in incorrect timestamps in the output file.
-frame=  690 fps= 16 q=-1.0 size=N/A time=00:00:46.21 bitrate=N/A speed=1.05x elapsed=0:00:44.03    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 372182, current: 369296; changing to 372183. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 372183, current: 370320; changing to 372184. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4180321, current: 4154779; changing to 4180322. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4180322, current: 4159279; changing to 4180323. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 372184, current: 371344; changing to 372185. This may result in incorrect timestamps in the output file.
-frame=  697 fps= 16 q=-1.0 size=N/A time=00:00:46.28 bitrate=N/A speed=1.04x elapsed=0:00:44.55    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4180323, current: 4163779; changing to 4180324. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4180324, current: 4172869; changing to 4180325. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4180325, current: 4177369; changing to 4180326. This may result in incorrect timestamps in the output file.
-frame=  705 fps= 16 q=-1.0 size=N/A time=00:00:47.21 bitrate=N/A speed=1.05x elapsed=0:00:45.07    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4270490, current: 4244888; changing to 4270491. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4270491, current: 4249388; changing to 4270492. This may result in incorrect timestamps in the output file.
-frame=  712 fps= 16 q=-1.0 size=N/A time=00:00:47.28 bitrate=N/A speed=1.04x elapsed=0:00:45.59    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4270492, current: 4253888; changing to 4270493. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4270493, current: 4262978; changing to 4270494. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4270494, current: 4267478; changing to 4270495. This may result in incorrect timestamps in the output file.
-frame=  721 fps= 16 q=-1.0 size=N/A time=00:00:48.26 bitrate=N/A speed=1.05x elapsed=0:00:46.10    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 388042, current: 385135; changing to 388043. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 388043, current: 386159; changing to 388044. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4360494, current: 4335087; changing to 4360495. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 388044, current: 387183; changing to 388045. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4360495, current: 4339587; changing to 4360496. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4360496, current: 4344087; changing to 4360497. This may result in incorrect timestamps in the output file.
-frame=  728 fps= 16 q=-1.0 size=N/A time=00:00:48.33 bitrate=N/A speed=1.04x elapsed=0:00:46.62    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4360497, current: 4348587; changing to 4360498. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4360498, current: 4357677; changing to 4360499. This may result in incorrect timestamps in the output file.
-frame=  736 fps= 16 q=-1.0 size=N/A time=00:00:49.22 bitrate=N/A speed=1.04x elapsed=0:00:47.13    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 396568, current: 393655; changing to 396569. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 396569, current: 394679; changing to 396570. This may result in incorrect timestamps in the output file.
-frame=  744 fps= 16 q=-1.0 size=N/A time=00:00:49.46 bitrate=N/A speed=1.04x elapsed=0:00:47.66    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 396570, current: 395703; changing to 396571. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4533404, current: 4507828; changing to 4533405. This may result in incorrect timestamps in the output file.
-frame=  751 fps= 16 q=-1.0 size=N/A time=00:00:50.15 bitrate=N/A speed=1.04x elapsed=0:00:48.17    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4533405, current: 4512328; changing to 4533406. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4533406, current: 4516828; changing to 4533407. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4533407, current: 4525918; changing to 4533408. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4533408, current: 4530418; changing to 4533409. This may result in incorrect timestamps in the output file.
-frame=  758 fps= 16 q=-1.0 size=N/A time=00:00:50.76 bitrate=N/A speed=1.04x elapsed=0:00:48.68    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4623464, current: 4597961; changing to 4623465. This may result in incorrect timestamps in the output file.
-frame=  766 fps= 16 q=-1.0 size=N/A time=00:00:51.15 bitrate=N/A speed=1.04x elapsed=0:00:49.19    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4623465, current: 4602461; changing to 4623466. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4623466, current: 4606961; changing to 4623467. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4623467, current: 4616051; changing to 4623468. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4623468, current: 4620551; changing to 4623469. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 412416, current: 409502; changing to 412417. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 412417, current: 410526; changing to 412418. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 412418, current: 411550; changing to 412419. This may result in incorrect timestamps in the output file.
-frame=  775 fps= 16 q=-1.0 size=N/A time=00:00:51.57 bitrate=N/A speed=1.04x elapsed=0:00:49.71    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4713633, current: 4688045; changing to 4713634. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4713634, current: 4692545; changing to 4713635. This may result in incorrect timestamps in the output file.
-frame=  782 fps= 16 q=-1.0 size=N/A time=00:00:52.20 bitrate=N/A speed=1.04x elapsed=0:00:50.23    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4713635, current: 4697045; changing to 4713636. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4713636, current: 4701545; changing to 4713637. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4713637, current: 4710635; changing to 4713638. This may result in incorrect timestamps in the output file.
-frame=  790 fps= 16 q=-1.0 size=N/A time=00:00:52.74 bitrate=N/A speed=1.04x elapsed=0:00:50.74    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4804818, current: 4779250; changing to 4804819. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4804819, current: 4783750; changing to 4804820. This may result in incorrect timestamps in the output file.
-frame=  798 fps= 16 q=-1.0 size=N/A time=00:00:53.21 bitrate=N/A speed=1.04x elapsed=0:00:51.27    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4804820, current: 4788250; changing to 4804821. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 428264, current: 425355; changing to 428265. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4804821, current: 4797340; changing to 4804822. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4804822, current: 4801840; changing to 4804823. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 428265, current: 426379; changing to 428266. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 428266, current: 427403; changing to 428267. This may result in incorrect timestamps in the output file.
-frame=  806 fps= 16 q=-1.0 size=N/A time=00:00:53.68 bitrate=N/A speed=1.04x elapsed=0:00:51.78    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4894859, current: 4869401; changing to 4894860. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4894860, current: 4873901; changing to 4894861. This may result in incorrect timestamps in the output file.
-frame=  813 fps= 16 q=-1.0 size=N/A time=00:00:54.22 bitrate=N/A speed=1.04x elapsed=0:00:52.29    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4894861, current: 4878401; changing to 4894862. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4894862, current: 4887491; changing to 4894863. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4894863, current: 4891991; changing to 4894864. This may result in incorrect timestamps in the output file.
-frame=  821 fps= 16 q=-1.0 size=N/A time=00:00:55.11 bitrate=N/A speed=1.04x elapsed=0:00:52.81    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4990602, current: 4956952; changing to 4990603. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 444114, current: 441204; changing to 444115. This may result in incorrect timestamps in the output file.
-frame=  828 fps= 16 q=-1.0 size=N/A time=00:00:55.14 bitrate=N/A speed=1.03x elapsed=0:00:53.33    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4990603, current: 4961452; changing to 4990604. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 444115, current: 442228; changing to 444116. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4990604, current: 4970542; changing to 4990605. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4990605, current: 4975042; changing to 4990606. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 444116, current: 443252; changing to 444117. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4990606, current: 4979542; changing to 4990607. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 4990607, current: 4988632; changing to 4990608. This may result in incorrect timestamps in the output file.
-frame=  837 fps= 16 q=-1.0 size=N/A time=00:00:55.79 bitrate=N/A speed=1.04x elapsed=0:00:53.84    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5077268, current: 5046969; changing to 5077269. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5077269, current: 5051469; changing to 5077270. This may result in incorrect timestamps in the output file.
-frame=  844 fps= 16 q=-1.0 size=N/A time=00:00:56.19 bitrate=N/A speed=1.03x elapsed=0:00:54.35    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5077270, current: 5055969; changing to 5077271. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5077271, current: 5065059; changing to 5077272. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5077272, current: 5069559; changing to 5077273. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5077273, current: 5074059; changing to 5077274. This may result in incorrect timestamps in the output file.
-frame=  852 fps= 16 q=-1.0 size=N/A time=00:00:57.13 bitrate=N/A speed=1.04x elapsed=0:00:54.87    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 459972, current: 457067; changing to 459973. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 459973, current: 458091; changing to 459974. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5171920, current: 5138219; changing to 5171921. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5171921, current: 5142719; changing to 5171922. This may result in incorrect timestamps in the output file.
-frame=  860 fps= 16 q=-1.0 size=N/A time=00:00:57.20 bitrate=N/A speed=1.03x elapsed=0:00:55.38    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 459974, current: 459115; changing to 459975. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5171922, current: 5151809; changing to 5171923. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5171923, current: 5156309; changing to 5171924. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5171924, current: 5160809; changing to 5171925. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5171925, current: 5169899; changing to 5171926. This may result in incorrect timestamps in the output file.
-frame=  868 fps= 16 q=-1.0 size=N/A time=00:00:58.14 bitrate=N/A speed=1.04x elapsed=0:00:55.90    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5258544, current: 5228298; changing to 5258545. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5258545, current: 5232798; changing to 5258546. This may result in incorrect timestamps in the output file.
-frame=  875 fps= 16 q=-1.0 size=N/A time=00:00:58.20 bitrate=N/A speed=1.03x elapsed=0:00:56.42    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5258546, current: 5241888; changing to 5258547. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 468484, current: 465591; changing to 468485. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5258547, current: 5246388; changing to 5258548. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 468485, current: 466615; changing to 468486. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5258548, current: 5250888; changing to 5258549. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 468486, current: 467639; changing to 468487. This may result in incorrect timestamps in the output file.
-frame=  883 fps= 16 q=-1.0 size=N/A time=00:00:58.71 bitrate=N/A speed=1.03x elapsed=0:00:56.93    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5353157, current: 5319374; changing to 5353158. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5353158, current: 5328464; changing to 5353159. This may result in incorrect timestamps in the output file.
-frame=  891 fps= 16 q=-1.0 size=N/A time=00:00:59.27 bitrate=N/A speed=1.03x elapsed=0:00:57.45    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5353159, current: 5332964; changing to 5353160. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5353160, current: 5337464; changing to 5353161. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5353161, current: 5346554; changing to 5353162. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5353162, current: 5351054; changing to 5353163. This may result in incorrect timestamps in the output file.
-frame=  898 fps= 15 q=-1.0 size=N/A time=00:01:00.06 bitrate=N/A speed=1.04x elapsed=0:00:57.97    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 484332, current: 481430; changing to 484333. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5440665, current: 5410586; changing to 5440666. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 484333, current: 482462; changing to 484334. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5440666, current: 5419676; changing to 5440667. This may result in incorrect timestamps in the output file.
-frame=  907 fps= 16 q=-1.0 size=N/A time=00:01:00.28 bitrate=N/A speed=1.03x elapsed=0:00:58.50    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5440667, current: 5424176; changing to 5440668. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 484334, current: 483478; changing to 484335. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5440668, current: 5428676; changing to 5440669. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5440669, current: 5437766; changing to 5440670. This may result in incorrect timestamps in the output file.
-frame=  914 fps= 15 q=-1.0 size=N/A time=00:01:01.07 bitrate=N/A speed=1.03x elapsed=0:00:59.02    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5531854, current: 5506299; changing to 5531855. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5531855, current: 5510799; changing to 5531856. This may result in incorrect timestamps in the output file.
-frame=  922 fps= 15 q=-1.0 size=N/A time=00:01:01.29 bitrate=N/A speed=1.03x elapsed=0:00:59.55    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5531856, current: 5515299; changing to 5531857. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5531857, current: 5524389; changing to 5531858. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5531858, current: 5528889; changing to 5531859. This may result in incorrect timestamps in the output file.
-frame=  930 fps= 15 q=-1.0 size=N/A time=00:01:02.13 bitrate=N/A speed=1.03x elapsed=0:01:00.06    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 500190, current: 497284; changing to 500191. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 500191, current: 498308; changing to 500192. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5622084, current: 5596468; changing to 5622085. This may result in incorrect timestamps in the output file.
-frame=  937 fps= 15 q=-1.0 size=N/A time=00:01:02.24 bitrate=N/A speed=1.03x elapsed=0:01:00.58    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 500192, current: 499332; changing to 500193. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5622085, current: 5600968; changing to 5622086. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5622086, current: 5605468; changing to 5622087. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5622087, current: 5614558; changing to 5622088. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5622088, current: 5619058; changing to 5622089. This may result in incorrect timestamps in the output file.
-frame=  945 fps= 15 q=-1.0 size=N/A time=00:01:03.13 bitrate=N/A speed=1.03x elapsed=0:01:01.09    frame=  953 fps= 15 q=-1.0 size=N/A time=00:01:03.71 bitrate=N/A speed=1.03x elapsed=0:01:01.60    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5791796, current: 5761561; changing to 5791797. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5791797, current: 5766061; changing to 5791798. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5791798, current: 5775151; changing to 5791799. This may result in incorrect timestamps in the output file.
-frame=  961 fps= 15 q=-1.0 size=N/A time=00:01:04.23 bitrate=N/A speed=1.03x elapsed=0:01:02.11    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5791799, current: 5779651; changing to 5791800. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 516036, current: 513153; changing to 516037. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5791800, current: 5784151; changing to 5791801. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 516037, current: 514177; changing to 516038. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 516038, current: 515201; changing to 516039. This may result in incorrect timestamps in the output file.
-frame=  969 fps= 15 q=-1.0 size=N/A time=00:01:04.65 bitrate=N/A speed=1.03x elapsed=0:01:02.63    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5886341, current: 5852636; changing to 5886342. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5886342, current: 5857136; changing to 5886343. This may result in incorrect timestamps in the output file.
-frame=  976 fps= 15 q=-1.0 size=N/A time=00:01:05.14 bitrate=N/A speed=1.03x elapsed=0:01:03.16    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5886343, current: 5866226; changing to 5886344. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5886344, current: 5870726; changing to 5886345. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5886345, current: 5875226; changing to 5886346. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5886346, current: 5884316; changing to 5886347. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 524564, current: 521663; changing to 524565. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 524565, current: 522687; changing to 524566. This may result in incorrect timestamps in the output file.
-frame=  984 fps= 15 q=-1.0 size=N/A time=00:01:05.46 bitrate=N/A speed=1.03x elapsed=0:01:03.67    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 524566, current: 523711; changing to 524567. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5972999, current: 5942845; changing to 5973000. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5973000, current: 5947345; changing to 5973001. This may result in incorrect timestamps in the output file.
-frame=  991 fps= 15 q=-1.0 size=N/A time=00:01:06.14 bitrate=N/A speed=1.03x elapsed=0:01:04.18    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5973001, current: 5956435; changing to 5973002. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5973002, current: 5960935; changing to 5973003. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 5973003, current: 5965435; changing to 5973004. This may result in incorrect timestamps in the output file.
-frame=  999 fps= 15 q=-1.0 size=N/A time=00:01:06.76 bitrate=N/A speed=1.03x elapsed=0:01:04.69    frame= 1006 fps= 15 q=-1.0 size=N/A time=00:01:07.45 bitrate=N/A speed=1.03x elapsed=0:01:05.21    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6065100, current: 6039639; changing to 6065101. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6065101, current: 6044139; changing to 6065102. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6065102, current: 6048639; changing to 6065103. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6065103, current: 6057729; changing to 6065104. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 540414, current: 537516; changing to 540415. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6065104, current: 6062229; changing to 6065105. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 540415, current: 538540; changing to 540416. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 540416, current: 539564; changing to 540417. This may result in incorrect timestamps in the output file.
-frame= 1015 fps= 15 q=-1.0 size=N/A time=00:01:07.57 bitrate=N/A speed=1.03x elapsed=0:01:05.73    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6155338, current: 6129839; changing to 6155339. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6155339, current: 6134339; changing to 6155340. This may result in incorrect timestamps in the output file.
-frame= 1023 fps= 15 q=-1.0 size=N/A time=00:01:08.22 bitrate=N/A speed=1.03x elapsed=0:01:06.24    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6155340, current: 6138839; changing to 6155341. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6155341, current: 6143339; changing to 6155342. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6155342, current: 6152429; changing to 6155343. This may result in incorrect timestamps in the output file.
-frame= 1030 fps= 15 q=-1.0 size=N/A time=00:01:09.01 bitrate=N/A speed=1.03x elapsed=0:01:06.78    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6246428, current: 6220849; changing to 6246429. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6246429, current: 6225349; changing to 6246430. This may result in incorrect timestamps in the output file.
-frame= 1039 fps= 15 q=-1.0 size=N/A time=00:01:09.23 bitrate=N/A speed=1.03x elapsed=0:01:07.31    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 556263, current: 553364; changing to 556264. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6246430, current: 6229849; changing to 6246431. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 556264, current: 554388; changing to 556265. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6246431, current: 6238939; changing to 6246432. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6246432, current: 6243439; changing to 6246433. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 556265, current: 555412; changing to 556266. This may result in incorrect timestamps in the output file.
-frame= 1046 fps= 15 q=-1.0 size=N/A time=00:01:09.68 bitrate=N/A speed=1.03x elapsed=0:01:07.82    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6342100, current: 6308406; changing to 6342101. This may result in incorrect timestamps in the output file.
-frame= 1054 fps= 15 q=-1.0 size=N/A time=00:01:10.16 bitrate=N/A speed=1.03x elapsed=0:01:08.34    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6342101, current: 6312906; changing to 6342102. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6342102, current: 6321996; changing to 6342103. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6342103, current: 6326496; changing to 6342104. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6342104, current: 6330996; changing to 6342105. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6342105, current: 6340086; changing to 6342106. This may result in incorrect timestamps in the output file.
-frame= 1062 fps= 15 q=-1.0 size=N/A time=00:01:11.09 bitrate=N/A speed=1.03x elapsed=0:01:08.86    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 572113, current: 569209; changing to 572114. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 572114, current: 570233; changing to 572115. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6433256, current: 6399682; changing to 6433257. This may result in incorrect timestamps in the output file.
-frame= 1070 fps= 15 q=-1.0 size=N/A time=00:01:11.17 bitrate=N/A speed=1.03x elapsed=0:01:09.37    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6433257, current: 6404182; changing to 6433258. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6433258, current: 6413272; changing to 6433259. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 572115, current: 571257; changing to 572116. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6433259, current: 6417772; changing to 6433260. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6433260, current: 6422272; changing to 6433261. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6433261, current: 6431362; changing to 6433262. This may result in incorrect timestamps in the output file.
-frame= 1077 fps= 15 q=-1.0 size=N/A time=00:01:11.62 bitrate=N/A speed=1.02x elapsed=0:01:09.89    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6520062, current: 6489822; changing to 6520063. This may result in incorrect timestamps in the output file.
-frame= 1085 fps= 15 q=-1.0 size=N/A time=00:01:12.17 bitrate=N/A speed=1.03x elapsed=0:01:10.40    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6520063, current: 6494322; changing to 6520064. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6520064, current: 6503412; changing to 6520065. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6520065, current: 6507912; changing to 6520066. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6520066, current: 6512412; changing to 6520067. This may result in incorrect timestamps in the output file.
-frame= 1093 fps= 15 q=-1.0 size=N/A time=00:01:12.72 bitrate=N/A speed=1.03x elapsed=0:01:10.92    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 587958, current: 585067; changing to 587959. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 587959, current: 586091; changing to 587960. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 587960, current: 587115; changing to 587961. This may result in incorrect timestamps in the output file.
-frame= 1100 fps= 15 q=-1.0 size=N/A time=00:01:13.48 bitrate=N/A speed=1.03x elapsed=0:01:11.43    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6612047, current: 6586489; changing to 6612048. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6612048, current: 6590989; changing to 6612049. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6612049, current: 6595489; changing to 6612050. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6612050, current: 6604579; changing to 6612051. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6612051, current: 6609079; changing to 6612052. This may result in incorrect timestamps in the output file.
-frame= 1109 fps= 15 q=-1.0 size=N/A time=00:01:14.08 bitrate=N/A speed=1.03x elapsed=0:01:11.97    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 596483, current: 593589; changing to 596484. This may result in incorrect timestamps in the output file.
-frame= 1116 fps= 15 q=-1.0 size=N/A time=00:01:14.32 bitrate=N/A speed=1.03x elapsed=0:01:12.48    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 596484, current: 594613; changing to 596485. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 596485, current: 595637; changing to 596486. This may result in incorrect timestamps in the output file.
-frame= 1123 fps= 15 q=-1.0 size=N/A time=00:01:14.83 bitrate=N/A speed=1.03x elapsed=0:01:13.00    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6786349, current: 6752725; changing to 6786350. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6786350, current: 6757225; changing to 6786351. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6786351, current: 6766315; changing to 6786352. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6786352, current: 6770815; changing to 6786353. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6786353, current: 6775315; changing to 6786354. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6786354, current: 6784405; changing to 6786355. This may result in incorrect timestamps in the output file.
-frame= 1131 fps= 15 q=-1.0 size=N/A time=00:01:15.49 bitrate=N/A speed=1.03x elapsed=0:01:13.50    frame= 1140 fps= 15 q=-1.0 size=N/A time=00:01:16.41 bitrate=N/A speed=1.03x elapsed=0:01:14.03    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6877515, current: 6843785; changing to 6877516. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6877516, current: 6852875; changing to 6877517. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6877517, current: 6857375; changing to 6877518. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6877518, current: 6861875; changing to 6877519. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6877519, current: 6870965; changing to 6877520. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 612348, current: 609434; changing to 612349. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6877520, current: 6875465; changing to 6877521. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 612349, current: 610458; changing to 612350. This may result in incorrect timestamps in the output file.
-frame= 1147 fps= 15 q=-1.0 size=N/A time=00:01:16.43 bitrate=N/A speed=1.03x elapsed=0:01:14.54    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 612350, current: 611482; changing to 612351. This may result in incorrect timestamps in the output file.
-frame= 1155 fps= 15 q=-1.0 size=N/A time=00:01:17.22 bitrate=N/A speed=1.03x elapsed=0:01:15.06    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6965157, current: 6939538; changing to 6965158. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6965158, current: 6944038; changing to 6965159. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6965159, current: 6948538; changing to 6965160. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6965160, current: 6957628; changing to 6965161. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 6965161, current: 6962128; changing to 6965162. This may result in incorrect timestamps in the output file.
-frame= 1162 fps= 15 q=-1.0 size=N/A time=00:01:17.47 bitrate=N/A speed=1.03x elapsed=0:01:15.58    frame= 1170 fps= 15 q=-1.0 size=N/A time=00:01:18.40 bitrate=N/A speed=1.03x elapsed=0:01:16.09    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7055184, current: 7029753; changing to 7055185. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7055185, current: 7034253; changing to 7055186. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 628199, current: 625285; changing to 628200. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7055186, current: 7038753; changing to 7055187. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7055187, current: 7047843; changing to 7055188. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 628200, current: 626309; changing to 628201. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7055188, current: 7052343; changing to 7055189. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 628201, current: 627333; changing to 628202. This may result in incorrect timestamps in the output file.
-frame= 1178 fps= 15 q=-1.0 size=N/A time=00:01:18.54 bitrate=N/A speed=1.03x elapsed=0:01:16.61    frame= 1186 fps= 15 q=-1.0 size=N/A time=00:01:19.33 bitrate=N/A speed=1.03x elapsed=0:01:17.11    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7145406, current: 7115196; changing to 7145407. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7145407, current: 7124286; changing to 7145408. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7145408, current: 7128786; changing to 7145409. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7145409, current: 7133286; changing to 7145410. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7145410, current: 7142376; changing to 7145411. This may result in incorrect timestamps in the output file.
-frame= 1193 fps= 15 q=-1.0 size=N/A time=00:01:19.52 bitrate=N/A speed=1.02x elapsed=0:01:17.64    frame= 1201 fps= 15 q=-1.0 size=N/A time=00:01:20.42 bitrate=N/A speed=1.03x elapsed=0:01:18.15    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 644050, current: 641147; changing to 644051. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7236471, current: 7210967; changing to 7236472. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7236472, current: 7215467; changing to 7236473. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 644051, current: 642171; changing to 644052. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7236473, current: 7219967; changing to 7236474. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7236474, current: 7229057; changing to 7236475. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 644052, current: 643195; changing to 644053. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7236475, current: 7233557; changing to 7236476. This may result in incorrect timestamps in the output file.
-frame= 1209 fps= 15 q=-1.0 size=N/A time=00:01:20.59 bitrate=N/A speed=1.02x elapsed=0:01:18.67    frame= 1216 fps= 15 q=-1.0 size=N/A time=00:01:21.38 bitrate=N/A speed=1.03x elapsed=0:01:19.18    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7332181, current: 7298635; changing to 7332182. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7332182, current: 7303135; changing to 7332183. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7332183, current: 7312225; changing to 7332184. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7332184, current: 7316725; changing to 7332185. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 652565, current: 649665; changing to 652566. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 652566, current: 650689; changing to 652567. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7332185, current: 7321225; changing to 7332186. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7332186, current: 7330315; changing to 7332187. This may result in incorrect timestamps in the output file.
-frame= 1225 fps= 15 q=-1.0 size=N/A time=00:01:21.46 bitrate=N/A speed=1.02x elapsed=0:01:19.70    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 652567, current: 651713; changing to 652568. This may result in incorrect timestamps in the output file.
-frame= 1232 fps= 15 q=-1.0 size=N/A time=00:01:22.25 bitrate=N/A speed=1.03x elapsed=0:01:20.22    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7420892, current: 7395377; changing to 7420893. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7420893, current: 7399877; changing to 7420894. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7420894, current: 7404377; changing to 7420895. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7420895, current: 7413467; changing to 7420896. This may result in incorrect timestamps in the output file.
-frame= 1239 fps= 15 q=-1.0 size=N/A time=00:01:22.43 bitrate=N/A speed=1.02x elapsed=0:01:20.73    [vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7420896, current: 7417967; changing to 7420897. This may result in incorrect timestamps in the output file.
-frame= 1247 fps= 15 q=-1.0 size=N/A time=00:01:23.32 bitrate=N/A speed=1.03x elapsed=0:01:21.25    [aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 668420, current: 665507; changing to 668421. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7511092, current: 7480890; changing to 7511093. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 668421, current: 666531; changing to 668422. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7511093, current: 7489980; changing to 7511094. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7511094, current: 7494480; changing to 7511095. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7511095, current: 7498980; changing to 7511096. This may result in incorrect timestamps in the output file.
-[aost#0:1/copy @ 00000200a84408c0] Non-monotonic DTS; previous: 668422, current: 667555; changing to 668423. This may result in incorrect timestamps in the output file.
-[vost#0:0/copy @ 00000200a84400c0] Non-monotonic DTS; previous: 7511096, current: 7508070; changing to 7511097. This may result in incorrect timestamps in the output file.
-frame= 1254 fps= 15 q=-1.0 size=N/A time=00:01:23.48 bitrate=N/A speed=1.02x elapsed=0:01:21.76    frame= 1264 fps= 15 q=-1.0 size=N/A time=00:01:24.43 bitrate=N/A speed=1.03x elapsed=0:01:22.34    
