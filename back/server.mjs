@@ -35,13 +35,14 @@ loadCamerasFromDisk();
 app.post('/api/register', (req, res) => {
   const { camId, publicUrl } = req.body;
   if (camId && publicUrl) {
-    if (!cameras[camId]) {
-      cameras[camId] = publicUrl;
-      console.log(`📡 Cámara registrada: ${camId} -> ${publicUrl}`);
-      saveCamerasToDisk();
+    const isNewOrChanged = !cameras[camId] || cameras[camId] !== publicUrl;
+    cameras[camId] = publicUrl;
+    saveCamerasToDisk();
+    if (isNewOrChanged) {
+      console.log(`📡 Cámara registrada/actualizada: ${camId} -> ${publicUrl}`);
       startStream({ camId, rtspUrl: publicUrl });
     } else {
-      console.log(`⚠️ Cámara ${camId} ya estaba registrada`);
+      console.log(`⚠️ Cámara ${camId} ya estaba registrada con la misma URL`);
     }
     return res.sendStatus(200);
   }
