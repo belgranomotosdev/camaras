@@ -7,7 +7,7 @@
 # - FFmpeg
 # - Registro en servidor externo
 # ===================================================================
-
+[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}
 # A) URL de tu servidor para registrar cámaras
 $serverRegisterUrl = "https://camarasserver-camserver-rlwh8e-a02680-31-97-64-187.traefik.me/api/register"
 
@@ -82,6 +82,9 @@ foreach ($linea in $camarasRaw) {
     Start-Process -WindowStyle Hidden -FilePath ".\ffmpeg.exe" -ArgumentList $ffmpegArgs `
     -RedirectStandardOutput ".\logs\$camId-out.log" `
     -RedirectStandardError ".\logs\$camId-err.log"
+
+    # Esperar a que el stream esté disponible en MediaMTX antes de registrar
+    Start-Sleep -Seconds 5
 
     # Construir RTSP público y registrar
     $publicRtsp = "rtsp://$ngrokHost`:$ngrokPort/$camId"
