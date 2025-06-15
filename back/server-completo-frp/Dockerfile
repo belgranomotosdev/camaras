@@ -7,10 +7,11 @@ FROM node:18
 WORKDIR /app
 
 # Copiar archivos de configuración y dependencias
-COPY package.json package-lock.json ./
+COPY package.json ./
+COPY package-lock.json ./
 
 # Instalar dependencias
-RUN npm install
+RUN npm ci
 
 # Copiar el resto de los archivos de la aplicación
 COPY . .

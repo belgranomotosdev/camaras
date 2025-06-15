@@ -1,23 +1,25 @@
 version: '3.8'
+
 services:
   backend:
     build: ./server-completo-frp
     container_name: camaras-backend
     ports:
-      - "3000:3000"
+      - "3000:3000" # Exponer el puerto del backend
     volumes:
-      - ./server-completo-frp/cameras.json:/app/cameras.json
-      - ./server-completo-frp/streams:/app/streams
-      - ./server-completo-frp/videos:/app/videos
-      - ./server-completo-frp/.env:/app/.env
+      - ./server-completo-frp/cameras.json:/app/cameras.json # Persistencia de cámaras
+      - ./server-completo-frp/streams:/app/streams # Persistencia de streams
+      - ./server-completo-frp/videos:/app/videos # Persistencia de videos
+      - ./server-completo-frp/.env:/app/.env # Variables de entorno
     environment:
       - NODE_ENV=production
     restart: unless-stopped
+
   frontend:
     build: ./ultimoprompt
     container_name: camaras-frontend
     ports:
-      - "5173:80"
+      - "5173:80" # Exponer el puerto del frontend
     depends_on:
-      - backend
+      - backend # Asegurar que el backend esté corriendo
     restart: unless-stopped
