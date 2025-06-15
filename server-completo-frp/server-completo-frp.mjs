@@ -13,7 +13,7 @@ const CAM_FILE = './cameras.json';
 // === 1. INICIAR SERVIDOR FRP ===
 const FRPS_CONFIG = `[common]
 bind_port = 7000`;
-fs.writeFileSync('./frps.ini', FRPS_CONFIG);
+fs.writeFileSync('./bin/frps.ini', FRPS_CONFIG);
 console.log('▶ Archivo frps.ini generado.');
 const frpsProcess = exec('./frps -c ./frps.ini');
 frpsProcess.stdout?.on('data', data => process.stdout.write(data));
