@@ -45,7 +45,7 @@ foreach ($linea in $camarasRaw) {
         publicUrl = $publicRtsp
     } | ConvertTo-Json -Compress
     try {
-        Invoke-RestMethod -Uri "https://camarasserver-camserver-rlwh8e-a02680-31-97-64-187.traefik.me/api/register" -Method POST -Body $payload -ContentType "application/json"
+        Invoke-RestMethod -Uri "https://asd-camfrp-omw9b5-f3fb7f-31-97-64-187.traefik.me/api/register" -Method POST -Body $payload -ContentType "application/json"
         Write-Host "   ✅ Registrada: $camId"
         "$camId = $publicRtsp" | Out-File -FilePath ".\urls-publicas.txt" -Append
     } catch {
