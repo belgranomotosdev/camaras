@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 3000
 
 # Comando para iniciar el servidor
-CMD ["node", "server-completo-frp.mjs"]
+CMD ["node", "start"]
