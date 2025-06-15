@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 3000
 
 # Comando para iniciar el servidor
-CMD ["node", "start"]
+CMD ["npm", "start"]
