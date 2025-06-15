@@ -1,25 +1,29 @@
-version: '3.8'
-
+version: "3.9"
 services:
-  backend:
-    build: ./server-completo-frp
-    container_name: camaras-backend
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frp-server
     ports:
-      - "3000:3000" # Exponer el puerto del backend
+      - "3000:3000"
     volumes:
-      - ./server-completo-frp/cameras.json:/app/cameras.json # Persistencia de cámaras
-      - ./server-completo-frp/streams:/app/streams # Persistencia de streams
-      - ./server-completo-frp/videos:/app/videos # Persistencia de videos
-      - ./server-completo-frp/.env:/app/.env # Variables de entorno
-    environment:
-      - NODE_ENV=production
-    restart: unless-stopped
-
-  frontend:
-    build: ./ultimoprompt
-    container_name: camaras-frontend
-    ports:
-      - "5173:80" # Exponer el puerto del frontend
+      - .:/app
     depends_on:
-      - backend # Asegurar que el backend esté corriendo
-    restart: unless-stopped
+      - db
+
+  db:
+    image: postgres:15
+    container_name: dbbelgranomotos
+    restart: always
+    environment:
+      POSTGRES_DB: belgranomotos
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
