@@ -8,7 +8,7 @@ Start-Sleep -Seconds 2
 
 # B) Iniciar FRPC (túnel RTSP)
 Write-Host "▶ Iniciando FRPC (túnel RTSP 8554)..."
-Start-Process -NoNewWindow -FilePath ".\frpc.exe" -ArgumentList "-c .\frpc.ini"
+Start-Process -NoNewWindow -FilePath ".\frpc.exe" -ArgumentList "-c .\frpc.toml"
 Start-Sleep -Seconds 5
 
 # C) Leer cámaras y lanzar ffmpeg
