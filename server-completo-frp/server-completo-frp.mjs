@@ -22,9 +22,9 @@ try {
 // === 1. INICIAR SERVIDOR FRP ===
 const FRPS_CONFIG = `[common]
 bind_port = 7000`;
-fs.writeFileSync('./frps.ini', FRPS_CONFIG);
-console.log('▶ Archivo frps.ini generado.');
-const frpsProcess = exec('./frps -c ./frps.ini');
+fs.writeFileSync('./frps.toml', FRPS_CONFIG);
+console.log('▶ Archivo frps.toml generado.');
+const frpsProcess = exec('./frps -c ./frps.toml');
 frpsProcess.stdout?.on('data', data => process.stdout.write(data));
 frpsProcess.stderr?.on('data', data => process.stderr.write(data));
 console.log('✅ FRP Server corriendo en el puerto 7000.');
