@@ -2,7 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 import fs from 'fs';
-import { exec } from 'child_process';
+import { exec, execSync } from 'child_process';
 import { startStream, recordStream } from './utils/ffmpegRunner.js';
 import { uploadToDrive } from './utils/uploadToDrive.js';
 
