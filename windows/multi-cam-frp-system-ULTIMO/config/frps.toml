@@ -1,5 +1,3 @@
-## config/frps.toml
-```toml
 [common]
 bind_port = 7000
 vhost_http_port = 8080     # opcional para HTTP healthchecks
@@ -13,6 +11,3 @@ type = "tcp"
 local_ip = "127.0.0.1"
 local_port = 8554
 remote_port = 18554
-```
-
----

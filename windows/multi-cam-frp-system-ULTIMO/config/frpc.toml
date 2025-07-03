@@ -1,5 +1,3 @@
-## config/frpc.toml
-```toml
 [common]
 server_addr = "<TU_SERVIDOR_PUBLICO>"
 server_port = 7000
@@ -10,6 +8,3 @@ type = "tcp"
 local_ip = "127.0.0.1"
 local_port = 8554
 remote_port = 18554
-``` 
-
----
