@@ -1,4 +1,4 @@
-serverAddr = "127.0.0.1"
+serverAddr = "https://asd-camfrp-omw9b5-f3fb7f-31-97-64-187.traefik.me/"
 serverPort = 7000
 
 [[proxies]]

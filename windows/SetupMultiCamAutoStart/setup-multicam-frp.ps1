@@ -38,7 +38,7 @@ foreach ($linea in $camarasRaw) {
     -RedirectStandardError ".\logs\$camId-err.log"
     Start-Sleep -Seconds 5
     # D) Registrar en backend usando la IP pública y puerto del servidor FRP
-    $publicRtsp = "rtsp://TU_IP_PUBLICA_DEL_SERVIDOR:18554/$camId"
+    $publicRtsp = "rtsp://asd-camfrp-omw9b5-f3fb7f-31-97-64-187.traefik.me:18554/$camId"
     Write-Host "▶ Registrando '$camId' → $publicRtsp en el servidor…"
     $payload = @{
         camId     = $camId
