@@ -22,7 +22,6 @@ Este sistema permite transmitir en vivo y grabar cámaras RTSP desde múltiples 
 
 ## 📦 Contenido del proyecto
 
-```
 multi-cam-frp-system/
 ├── server/                  # Código del servidor Ubuntu
 │   ├── config/              # Archivos frps.toml
