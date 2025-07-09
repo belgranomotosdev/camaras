@@ -1,8 +1,0 @@
-{
-  "backendUrl": "https://asd-camfrp-omw9b5-f3fb7f-31-97-64-187.traefik.me",
-  "frpcConfig": "./frpc.toml",
-  "rtspPort": 8554,
-  "frpPublicHost": "asd-camfrp-omw9b5-f3fb7f-31-97-64-187.traefik.me",
-  "frpPublicPort": 18554,
-  "env": "production"
-}
