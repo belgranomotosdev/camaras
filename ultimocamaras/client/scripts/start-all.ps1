@@ -1,0 +1,1 @@
+# PowerShell para lanzar mediamtx, frpc y ffmpeg

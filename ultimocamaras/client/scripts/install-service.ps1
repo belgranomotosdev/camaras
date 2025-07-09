@@ -1,0 +1,1 @@
+# Script PowerShell para instalar servicio con NSSM

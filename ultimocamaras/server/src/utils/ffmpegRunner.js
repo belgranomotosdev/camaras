@@ -1,0 +1,1 @@
+// Funciones para iniciar y grabar streams con FFmpeg
