@@ -4,25 +4,26 @@ import express from 'express';
 import cors from 'cors';
 import fs from 'fs';
 import { exec, execSync } from 'child_process';
-import { startStream, recordStream } from './utils/ffmpegRunner.js';
-import { uploadToDrive } from './utils/uploadToDrive.js';
+import { startStream, recordStream } from './utils/ffmpegRunner.mjs';
+import { uploadToDrive } from './utils/uploadToDrive.mjs';
 
 
 const app = express();
 const PORT = 3000;
 const CAM_FILE = './cameras.json';
 // === 0. CONFIGURACIÓN INICIAL ===
-// Otorgar permisos de ejecución al archivo frps
-try {
-  execSync('chmod +x ./frps');
-  console.log('✅ Permisos otorgados al archivo frps.');
-} catch (err) {
-  console.error('❌ Error otorgando permisos:', err.message);
+// Otorgar permisos de ejecución al archivo frps (solo en Linux)
+if (process.platform !== 'win32') {
+  try {
+    execSync('chmod +x ./frps');
+    console.log('✅ Permisos otorgados al archivo frps.');
+  } catch (err) {
+    console.error('❌ Error otorgando permisos:', err.message);
+  }
 }
 
 // === 1. INICIAR SERVIDOR FRP ===
-const FRPS_CONFIG = [common]
-bind_port = 7000;
+const FRPS_CONFIG = `[common]\nbind_port = 7000`;
 fs.writeFileSync('./frps.toml', FRPS_CONFIG);
 console.log('▶ Archivo frps.toml generado.');
 const frpsProcess = exec('./frps -c ./frps.toml');
