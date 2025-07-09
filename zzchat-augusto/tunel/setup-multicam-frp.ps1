@@ -1,16 +1,19 @@
 # setup-multicam-frp.ps1
 # Setup de cámaras Tapo con MediaMTX + FFmpeg + FRP
 
-# Cargar config
+# Cargar configuración
 $configPath = ".\config.json"
 if (-not (Test-Path $configPath)) {
-    Write-Error "❌ Falta el archivo de configuración config.json"; exit 1
+    Write-Error "❌ Falta el archivo de configuración config.json"
+    exit 1
 }
 $config = Get-Content $configPath | ConvertFrom-Json
 
-# Crear carpeta de logs
+# Crear carpeta de logs si no existe
 $logsDir = ".\logs"
-if (-not (Test-Path $logsDir)) { New-Item -ItemType Directory -Path $logsDir | Out-Null }
+if (-not (Test-Path $logsDir)) {
+    New-Item -ItemType Directory -Path $logsDir | Out-Null
+}
 
 # Lanzar MediaMTX
 Write-Host "▶ Iniciando MediaMTX..."
@@ -28,7 +31,8 @@ foreach ($linea in $camarasRaw) {
     if ($linea.Trim() -eq "") { continue }
     $parts = $linea -split "="
     if ($parts.Count -ne 2) {
-        Write-Warning "❗ Línea inválida: $linea"; continue
+        Write-Warning "Línea inválida: $linea"
+        continue
     }
 
     $camId = $parts[0].Trim()
@@ -57,24 +61,22 @@ foreach ($linea in $camarasRaw) {
     $publicRtsp = "rtsp://$($config.frpPublicHost):$($config.frpPublicPort)/$camId"
 
     Write-Host "▶ Registrando '$camId' → $publicRtsp en el backend..."
-    $payload = @{
-        camId     = $camId
-        publicUrl = $publicRtsp
-    } | ConvertTo-Json -Compress
+    $payload = @{ camId = $camId; publicUrl = $publicRtsp } | ConvertTo-Json -Compress
 
     try {
-        Invoke-RestMethod -Uri "$($config.backendUrl)/api/register" `
-                          -Method POST -Body $payload `
-                          -ContentType "application/json"
+        Invoke-RestMethod -Uri "$($config.backendUrl)/api/register" -Method POST -Body $payload -ContentType "application/json"
         Write-Host "   ✅ Registrada: $camId"
         "$camId = $publicRtsp" | Out-File -FilePath ".\urls-publicas.txt" -Append
     } catch {
-        Write-Warning "⚠️ Error registrando $camId: $_"
+        $msg = "Error registrando '{0}' : {1}" -f $camId, $_.Exception.Message
+        Write-Warning $msg
     }
 }
 
 Write-Host "`n✅ Todas las cámaras están en funcionamiento. URLs en: urls-publicas.txt"
-Write-Host "🔁 Presiona Ctrl+C para detener el sistema..."
+Write-Host "Presiona Ctrl+C para detener el sistema..."
 
 # Mantener la consola abierta
-while ($true) { Start-Sleep -Seconds 1 }
+while ($true) {
+    Start-Sleep -Seconds 1
+}
